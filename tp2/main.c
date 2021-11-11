@@ -3,12 +3,14 @@
 
 int main()
 {
-    double prixunitaire, nbresacderiz, total, remise, prixfinal;
+    double total, remise, prixfinal;
+    int nbresacderiz;
+    long prixunitaire;
 
     printf("Saisir le prix unitaire du riz: ");
-    scanf("%lf",&prixunitaire);
+    scanf("%d",&prixunitaire);
     printf("Saisir le nombre de sacs de riz: ");
-    scanf("%lf",&nbresacderiz);
+    scanf("%d",&nbresacderiz);
     total = nbresacderiz*prixunitaire;
     printf("\nLe montant total est de: %0.f Fr \n\n", total);
     if (total>=250000){
